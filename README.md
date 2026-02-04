@@ -9,11 +9,11 @@ The aim is to understand **how customers move through the journey**, which steps
 
 ## 🎯 Objectives
 
-- Clean and deduplicate raw event data (1 event per user per funnel step)
-- Focus on key funnel events that represent meaningful journey stages
-- Measure drop-offs and conversion at each step
-- Compare performance across top countries and devices
-- Produce clear outputs that support performance decisions
+- Clean and deduplicate raw event data (1 event per user per funnel step).
+- Focus on key funnel events that represent meaningful journey stages.
+- Measure drop-offs and conversion at each step.
+- Compare performance across top countries and devices.
+- Produce clear outputs that support performance decisions.
 
 ---
 
@@ -57,9 +57,9 @@ These events represent typical customer journey in an e-commerce platform.
 
 ---
 
-## 📈 Outputs & How Conclusions Were Reached
+## 📈 Outputs
 
-## 📈 Sample Output
+### Sample Output
 
 | Category | Event Name       | 🇺🇸 US Events | 🇮🇳 India Events | 🇨🇦 Canada Events |
 |----------|------------------|--------------|------------------|-------------------|
@@ -69,77 +69,77 @@ These events represent typical customer journey in an e-commerce platform.
 | Shopping | add_payment_info | 10,012       | 5,205            | 1,911             |
 | Shopping | purchase         | 7,145        | 2,103            | 905               |
 
-✅ *Shows clear drop-off trend and allows business to take region-specific action.*
+- *Shows clear drop-off trend and allows business to take region-specific action.*
 
-### 1️⃣ Overall Conversion by Funnel Stage
+### Overall Conversion by Funnel Stage
 This chart shows how users progress through each step of the funnel, expressed as a proportion of `page_view` users.
 
 ![Overall Conversion by Stage](overall_conversion_by_stage.png)
 
 **How this was calculated:**
-- Counted unique users at each funnel stage
-- Divided each stage by total `page_view` users
+- Counted unique users at each funnel stage.
+- Divided each stage by total `page_view` users.
 
 **What this shows:**
-- The biggest drop occurs between `view_item` and `add_to_cart`
-- Conversion continues to decline through checkout stages
-- Later-stage friction has a large impact on final outcomes
+- The biggest drop occurs between `view_item` and `add_to_cart`.
+- Conversion continues to decline through checkout stages.
+- Later-stage friction has a large impact on final outcomes.
 
 ---
 
-### 2️⃣ Purchase Conversion by Device
+### Purchase Conversion by Device
 This chart compares purchase conversion across device types.
 
 ![Conversion Rate by Device](conversion_rate_by_device.png)
 
 **How this was calculated:**
-- Purchase users ÷ page_view users for each device
+- Purchase users ÷ page_view users for each device.
 
 **What this shows:**
-- Mobile has the highest conversion
-- Desktop performs slightly lower
-- Tablet shows the weakest performance, indicating potential usability issues
+- Mobile has the highest conversion.
+- Desktop performs slightly lower.
+- Tablet shows the weakest performance, indicating potential usability issues.
 
 ---
 
 ## 🔍 Key Insights
 
-- - **United States** had the highest engagement at every stage of the funnel.
+- **United States** had the highest engagement at every stage of the funnel.
 - **India** showed major drop-offs post `add_to_cart`, hinting at friction during checkout.
 - **Canada** had the lowest absolute engagement, but a more consistent funnel progression.
-- Strong early engagement does not translate into completed purchases
-- Checkout stages contribute most to overall drop-off
-- Device type has a measurable impact on conversion
-- Improving later funnel stages would deliver the biggest performance gains
+- Strong early engagement does not translate into completed purchases.
+- Checkout stages contribute most to overall drop-off.
+- Device type has a measurable impact on conversion.
+- Improving later funnel stages would deliver the biggest performance gains.
 
 ---
 
 ## 💡 Business / Service Impact
 
 This analysis helps teams:
-- Identify where users struggle in a digital journey
-- Prioritise improvements based on evidence
-- Monitor whether changes improve outcomes
-- Support data-driven discussions with product and service teams
+- Identify where users struggle in a digital journey.
+- Prioritise improvements based on evidence.
+- Monitor whether changes improve outcomes.
+- Support data-driven discussions with product and service teams.
 
 ---
 
 ## 🧠 What I Learned
 
-- How to clean and structure real-world event data for analysis
-- Practical use of window functions like `ROW_NUMBER()` and `RANK()` in SQL
-- Funnel analysis logic from scratch
-- How to derive **actionable insights** from data, not just numbers
+- How to clean and structure real-world event data for analysis.
+- Practical use of window functions like `ROW_NUMBER()` and `RANK()` in SQL.
+- Funnel analysis logic from scratch.
+- How to derive **actionable insights** from data, not just numbers.
 
 ---
 
 ## 🚀 Future Improvements
 
-- Add time-to-conversion analysis
-- Segment funnels by new vs returning users
-- Build a Power BI dashboard for ongoing monitoring
-- Compare performance before and after service changes
-- - Run A/B test comparisons between countries or time periods
+- Add time-to-conversion analysis.
+- Segment funnels by new vs returning users.
+- Build a Power BI dashboard for ongoing monitoring.
+- Compare performance before and after service changes.
+- Run A/B test comparisons between countries or time periods.
 
 ---
 
