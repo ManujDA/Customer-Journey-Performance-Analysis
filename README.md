@@ -20,7 +20,7 @@ The aim is to understand **how customers move through the journey**, which steps
 ## 🛠️ Tech Stack
 
 - **Language:** SQL (Google BigQuery syntax)
-- **Data Source:** 'Funnel_analysis.raw_events'
+- **Data Source:** `Funnel_analysis.raw_events`
 - **Visualisation:** Python (Matplotlib)
 - **Techniques Used:**
   - Common Table Expressions (CTEs)
