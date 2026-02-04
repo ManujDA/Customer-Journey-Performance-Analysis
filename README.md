@@ -1,6 +1,6 @@
 # 📊 Customer Journey Performance Analysis (SQL | BigQuery)
 
-## Overview  
+## 🔍 Overview  
 This project performs a **funnel analysis** to analyse end-to-end customer journeys using event-level user interaction data to identify where users drop off in a typical e-commerce journey between `page_view` and `purchase`.
 
 The aim is to understand **how customers move through the journey**, which steps lose the most users and how performance differs by **country and device**. It leverages **advanced SQL techniques** to analyse how users from the top 3 countries, 🇺🇸 United States, 🇮🇳 India and 🇨🇦 Canada, behave across various funnel stages.
